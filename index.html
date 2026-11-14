@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#730d16">
+  <title>جيب لي | طلبك علينا وراحتك تهمنا</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <!-- شريط تقدم التمرير -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- الافتتاحية السينمائية -->
+  <div class="cinematic-intro" id="cinematicIntro" aria-hidden="true">
+    <div class="intro-light"></div>
+    <div class="intro-inner">
+      <div class="intro-mark">🚘</div>
+      <div class="intro-title">جيب لي</div>
+      <div class="intro-sub">JEeb LI · CINEMATIC X</div>
+      <div class="intro-bar"><span></span></div>
+      <button type="button" class="intro-skip" id="skipIntro">تخطي ↗</button>
+    </div>
+  </div>
+
+  <!-- الإضاءات الخلفية -->
+  <div class="ambient a1"></div>
+  <div class="ambient a2"></div>
+  <div class="ambient a3"></div>
+
+  <!-- الهيدر -->
+  <header class="nav" id="mainHeader">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">🚘</span>
+      <span>
+        <b>جيب لي</b>
+        <small>طلبك علينا وراحتك تهمنا</small>
+      </span>
+    </a>
+
+    <nav id="navLinks" class="nav-links">
+      <a class="active" href="index.html">الرئيسية</a>
+      <a href="albaik.html">البيك</a>
+      <a href="restaurant.html">مطعمك</a>
+      <a href="trips.html">المشاوير</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button type="button" class="icon-btn" id="openSettings" aria-label="الإعدادات" title="الإعدادات والتفضيلات">⚙️</button>
+      <button type="button" class="menu-btn" id="menuBtn" aria-label="القائمة">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-copy reveal">
+        <span class="eyebrow"><i></i> توصيل فاخر داخل الطائف</span>
+        <h1>مشوارك علينا.<br><em>وراحتك تهمنا.</em></h1>
+        <p>اطلب اللي تشتهيه من البيك أو مطعمك المفضل، أو خلّنا نوصلك لأي وجهة. تجربة طلب سينمائية بسيطة، واضحة، وعلى مزاجك.</p>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="#services">ابدأ طلبك <span>←</span></a>
+          <a class="btn ghost" href="#how">استكشف الخدمات</a>
+        </div>
+
+        <!-- Feature Badges التفاعلية -->
+        <div class="badges-row">
+          <button type="button" class="f-badge" data-tip="نستلم طلبك ونوصله بأسرع وقت ممكن داخل الطائف">
+            <span>⚡</span> توصيل سريع
+          </button>
+          <button type="button" class="f-badge" data-tip="نغطي أحياء الطائف والحوية والمناطق المجاورة">
+            <span>📍</span> جميع أنحاء الطائف
+          </button>
+          <button type="button" class="f-badge" data-tip="تسعير واضح وعادل يُؤكد معك قبل اعتماد الطلب">
+            <span>💎</span> أفضل الأسعار
+          </button>
+        </div>
+        <div class="badge-tip-box" id="badgeTipBox" aria-live="polite">اضغط على أي ميزة لمعرفة التفاصيل ✦</div>
+      </div>
+
+      <div class="hero-art reveal">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="glass-card main-glass tilt">
+          <div class="shine"></div>
+          <span class="tag">JEeb LI · TAIF</span>
+          <div class="delivery-icon">🚗</div>
+          <h3>طلبك بالطريق</h3>
+          <p>من اختيارك إلى بابك</p>
+          <div class="progress"><span></span></div>
+          <div class="status">
+            <span>جاهز لخدمتك الآن</span>
+            <b>●</b>
+          </div>
+        </div>
+        <div class="float-chip chip-a">⚡ توصيل سريع</div>
+        <div class="float-chip chip-b">📍 أنحاء الطائف</div>
+      </div>
+
+      <div class="scroll-hint"><span></span> انزل واكتشف</div>
+    </section>
+
+    <!-- شريط الثقة -->
+    <section class="trust reveal">
+      <div><b>01</b><span>اطلب بسهولة</span></div>
+      <div><b>02</b><span>حدد موقعك بدقة</span></div>
+      <div><b>03</b><span>أكد عبر واتساب</span></div>
+    </section>
+
+    <!-- بطاقات الخدمات الرئيسية -->
+    <section class="section" id="services">
+      <div class="section-head reveal">
+        <span class="eyebrow">اختَر وجهتك</span>
+        <h2>وش نجيب لك <em>اليوم؟</em></h2>
+        <p>ثلاث خدمات متكاملة، وتجربة واحدة مريحة وسريعة.</p>
+      </div>
+
+      <div class="service-grid">
+        <a class="service-card red reveal tilt" href="albaik.html">
+          <div class="card-top">
+            <span class="num">01 / ALBAIK</span>
+            <span class="arrow">↗</span>
+          </div>
+          <div class="service-emoji">🍗</div>
+          <h3>جيب لي من البيك</h3>
+          <p>وجبتك المفضلة من البيك طازجة وساخنة، اطلبها بطريقتك وحدد موقعك.</p>
+          <span class="card-link">ابدأ طلب البيك <b>←</b></span>
+          <div class="card-glow"></div>
+        </a>
+
+        <a class="service-card cream reveal tilt" href="restaurant.html">
+          <div class="card-top">
+            <span class="num">02 / RESTAURANT</span>
+            <span class="arrow">↗</span>
+          </div>
+          <div class="service-emoji">🍽️</div>
+          <h3>من مطعمك المفضل</h3>
+          <p>أي مطعم في الطائف على بالك؟ قل لنا اسمه وطلبك وحنا نجيبه لك.</p>
+          <span class="card-link">اطلب من مطعم <b>←</b></span>
+          <div class="card-glow"></div>
+        </a>
+
+        <a class="service-card dark reveal tilt" href="trips.html">
+          <div class="card-top">
+            <span class="num">03 / RIDE</span>
+            <span class="arrow">↗</span>
+          </div>
+          <div class="service-emoji">🚘</div>
+          <h3>ودّيني توصيل مشاوير</h3>
+          <p>حدد نقطة الانطلاق والوجهة، ونرتب لك مشوارك بكل راحة وأمان.</p>
+          <span class="card-link">رتّب مشوارك <b>←</b></span>
+          <div class="card-glow"></div>
+        </a>
+      </div>
+    </section>
+
+    <!-- كيف نعمل -->
+    <section class="how section" id="how">
+      <div class="how-panel reveal">
+        <div>
+          <span class="eyebrow">بكل بساطة</span>
+          <h2>أنت تحدد.<br><em>ونحن نرتّب.</em></h2>
+        </div>
+        <div class="steps">
+          <div>
+            <span>01</span>
+            <b>اختَر الخدمة</b>
+            <small>البيك، مطعم، أو مشوار.</small>
+          </div>
+          <div>
+            <span>02</span>
+            <b>عبّي التفاصيل</b>
+            <small>اكتب طلبك وحدد موقعك بضغطة.</small>
+          </div>
+          <div>
+            <span>03</span>
+            <b>أرسل واتساب</b>
+            <small>راجع الرسالة الجاهزة وأكدها.</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- الأسئلة الشائعة -->
+    <section class="section faq-section">
+      <div class="section-head reveal">
+        <span class="eyebrow">أسئلة تتكرر</span>
+        <h2>قبل ما <em>تطلب</em></h2>
+      </div>
+      <div class="faq reveal">
+        <details>
+          <summary>وين نطاق التوصيل؟ <span>＋</span></summary>
+          <p>الخدمة موجهة داخل الطائف. تأكد من توفر منطقتك عند التواصل عبر واتساب.</p>
+        </details>
+        <details>
+          <summary>كيف أرسل طلبي؟ <span>＋</span></summary>
+          <p>عبّئ النموذج في الصفحة المناسبة، ثم اضغط إرسال عبر واتساب لمراجعة التفاصيل وإرسالها.</p>
+        </details>
+        <details>
+          <summary>هل السعر يظهر تلقائيًا؟ <span>＋</span></summary>
+          <p>لا. تفاصيل السعر والتوصيل يتم تأكيدها بوضوح مع فريق الخدمة قبل اعتماد الطلب.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <!-- الفوتر -->
+  <footer>
+    <a class="brand" href="index.html">
+      <span class="brand-mark">🚘</span>
+      <span>
+        <b>جيب لي</b>
+        <small>طلبك علينا وراحتك تهمنا</small>
+      </span>
+    </a>
+    <p>© جميع الحقوق محفوظة باسم عبدالواحد مهيوب</p>
+    <a class="wa" href="https://wa.me/966571664509" target="_blank" rel="noopener">تواصل واتساب ↗</a>
+  </footer>
+
+  <!-- Settings Drawer -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <aside class="settings-drawer" id="settingsDrawer" aria-label="الإعدادات">
+    <div class="drawer-head">
+      <div>
+        <span>JEeb LI · SETTINGS</span>
+        <h3>إعدادات التجربة</h3>
+      </div>
+      <button type="button" class="close-btn" id="closeSettings" aria-label="إغلاق">✕</button>
+    </div>
+
+    <div class="drawer-body">
+      <div class="setting-row">
+        <div>
+          <b>المظهر (داكن / فاتح)</b>
+          <small>تبديل ألوان الواجهة</small>
+        </div>
+        <button type="button" class="pill-toggle" id="themeToggle">الوضع الداكن 🌙</button>
+      </div>
+
+      <div class="setting-row">
+        <div>
+          <b>الحركات السينمائية</b>
+          <small>تفعيل أو تقليل الأنيميشن</small>
+        </div>
+        <button type="button" class="pill-toggle" id="motionToggle">مفعّلة ✨</button>
+      </div>
+
+      <div class="drawer-card">
+        <b>⭐ قيّم تجربتك</b>
+        <div class="stars" id="starRating">
+          <button type="button" data-star="1">★</button>
+          <button type="button" data-star="2">★</button>
+          <button type="button" data-star="3">★</button>
+          <button type="button" data-star="4">★</button>
+          <button type="button" data-star="5">★</button>
+        </div>
+        <textarea id="feedbackInput" placeholder="اكتب تعليقك أو اقتراحك لتحسين الخدمة..."></textarea>
+        <button type="button" class="btn primary full-btn" id="sendFeedbackBtn">إرسال التقييم والاقتراح</button>
+      </div>
+
+      <div class="drawer-links">
+        <details>
+          <summary>الشروط والأحكام</summary>
+          <p>يتم اعتماد الطلبات بعد مراجعتها وتأكيد السعر النهائي عبر محادثة واتساب الرسمية.</p>
+        </details>
+        <details>
+          <summary>سياسة الخصوصية</summary>
+          <p>بياناتك وموقعك الجغرافي تُستخدم فقط لتنفيذ طلبك ولا يتم تخزينها على خوادم خارجية.</p>
+        </details>
+        <details>
+          <summary>معلومات الموقع والتواصل</summary>
+          <p>منصة جيب لي لخدمات التوصيل والمشاوير في الطائف — واتساب الدعم: 966571664509</p>
+        </details>
+      </div>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast"></div>
+  <script src="index.js"></script>
+</body>
+</html>
